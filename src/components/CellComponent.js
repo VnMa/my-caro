@@ -2,6 +2,11 @@ import React, { Component } from "react";
 
 export default class CellComponent extends Component {
   render() {
-    return <div className="cell">Cell {this.props.value}</div>;
+    const { value } = this.props;
+    return (
+      <div className="cell" onClick={this.props.onClick}>
+        {value}
+      </div>
+    );
   }
 }

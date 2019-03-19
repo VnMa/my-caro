@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import BoardComponent from "./components/BoardComponent";
+import GameComponent from "./components/GameComponent";
 class App extends Component {
   render() {
     return (
       <div>
-        <BoardComponent />
+        <GameComponent size="3" />
       </div>
     );
   }
